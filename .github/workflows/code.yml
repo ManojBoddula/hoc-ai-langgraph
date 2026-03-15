@@ -1,0 +1,6 @@
+env:
+  API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+
+steps:
+  - name: Use API key
+    run: echo "Your API key is $API_KEY"
