@@ -1,0 +1,366 @@
+--- Global Styles ---
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f0f4f8;
+  margin: 0;
+  color: #1e293b;
+}
+
+h2, h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+/* --- Main Container --- */
+.container {
+  display: flex;
+  height: 100vh;
+  gap: 1rem;
+  padding: 10px;
+}
+
+/* --- Left Side: Interaction Form --- */
+.left {
+  width: 65%;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  overflow-y: auto;
+}
+
+/* --- Form Field Card --- */
+.field-card {
+  background: #f8fafc;
+  padding: 12px 16px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.field-card label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #1e293b;
+}
+
+.field-card input,
+.field-card textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background: #e2e8f0;
+  color: #1e293b;
+  resize: none;
+  font-size: 14px;
+}
+
+/* --- Sentiment Badge --- */
+.sentiment {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Sentiment colors */
+.sentiment.positive {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.sentiment.neutral {
+  background-color: #fef3c7;
+  color: #78350f;
+}
+
+.sentiment.negative {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+/* --- Right Side: Chat Assistant --- */
+.right {
+  width: 35%;
+  padding: 20px;
+  background: #1e293b;
+  color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Chat History */
+.chat-history {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  padding-right: 5px;
+}
+
+/* Chat Messages */
+.chat-message {
+  margin: 8px 0;
+  padding: 10px 14px;
+  border-radius: 12px;
+  max-width: 80%;
+  word-wrap: break-word;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* User messages */
+.chat-message.user {
+  background: #3b82f6;
+  align-self: flex-end;
+  color: white;
+  text-align: right;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Bot messages */
+.chat-message.bot {
+  background: #64748b;
+  align-self: flex-start;
+  color: white;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Chat Input */
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  resize: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Send Button */
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #10b981;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover:not(:disabled) {
+  background: #059669;
+}
+
+button:disabled {
+  background: #6b7280;
+  cursor: not-allowed;
+}
+
+/* Scrollbar styling for chat history */
+.chat-history::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-history::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+.chat-history::-webkit-scrollbar-thumb {
+  background-color: #64748b;
+  border-radius: 3px;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #eef2f7;
+  margin: 0;
+  color: #1e293b;
+}
+
+h2, h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+/* --- Main Container --- */
+.container {
+  display: flex;
+  height: 100vh;
+  gap: 1rem;
+  padding: 10px;
+}
+
+/* --- Left Side: Interaction Form --- */
+.left {
+  width: 65%;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  overflow-y: auto;
+}
+
+/* --- Form Field Card --- */
+.field-card {
+  background: #fef3c7;
+  padding: 12px 16px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.field-card label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #1e293b;
+}
+
+.field-card input,
+.field-card textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background: #fef9f0;
+  color: #1e293b;
+  resize: none;
+  font-size: 14px;
+}
+
+/* --- Sentiment Badge --- */
+.sentiment {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Sentiment colors */
+.sentiment.positive {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.sentiment.neutral {
+  background-color: #fef3c7;
+  color: #78350f;
+}
+
+.sentiment.negative {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+/* --- Right Side: Chat Assistant --- */
+.right {
+  width: 35%;
+  padding: 20px;
+  background: #1e293b;
+  color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Chat History */
+.chat-history {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  padding-right: 5px;
+}
+
+/* Chat Messages */
+.chat-message {
+  margin: 8px 0;
+  padding: 10px 14px;
+  border-radius: 12px;
+  max-width: 80%;
+  word-wrap: break-word;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* User messages */
+.chat-message.user {
+  background: #3b82f6;
+  align-self: flex-end;
+  color: white;
+  text-align: right;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Bot messages */
+.chat-message.bot {
+  background: #64748b;
+  align-self: flex-start;
+  color: white;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Chat Input */
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  resize: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Send Button */
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #10b981;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover:not(:disabled) {
+  background: #059669;
+}
+
+button:disabled {
+  background: #6b7280;
+  cursor: not-allowed;
+}
+
+/* Scrollbar styling for chat history */
+.chat-history::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-history::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+.chat-history::-webkit-scrollbar-thumb {
+  background-color: #64748b;
+  border-radius: 3px;
+}
